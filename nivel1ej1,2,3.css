@@ -1,0 +1,106 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contenedor{
+    display: flex;
+    flex-flow: column nowrap;  
+}
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: #363C42;
+            display: flex;
+            flex-flow: row nowrap;     
+            height: 100px;
+            align-items: center;
+        }
+            .logo{
+                background: #DF2815;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .nav{
+                background: #DF2815;
+                flex: 5 1 auto;
+                height: 30px;
+            }
+            .redes{
+                background: #DF2815;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+        .titulo{
+            background: #DF6E15;
+        }
+            h1{
+                background: #E5D336; 
+                height: 30px;
+            }    
+    .section{
+        background: #000;
+        display: flex;
+    }
+        .articulos{
+            background: #193641;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #3D87CD;
+                flex: 1 1 40%;
+            }
+            p{
+                background: #99D5E7;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #E92313;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #E5D336;
+            }
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background: #E9C913;
+            width: 100%;
+        }
+@media all and (max-width: 768px){
+    .section{
+        background: #E5D336; 
+        flex-direction: column;
+     }
+    .aside{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+ @media all and (max-width: 600px){
+    .menu{
+        flex-direction: column;
+         height: auto;
+     }
+    .logo{
+        width: 90%;
+    }
+    .nav{
+        width: 90%;
+    }
+    .redes{
+        width: 90%;
+    }
+    .aside{
+        flex-direction: column;
+    }
+}        
